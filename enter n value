@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int a=0,b=1,n,i,c;
+	printf("enter the n value : ");
+	scanf("%d",&n);
+	while(n==1)
+	{
+		printf("%d",n);
+	}
+	printf("\n0");
+	printf("\n1");
+	for(i=3;i<=n;i++)
+	{
+		c=a;
+		a=b;
+		b=c+a;
+		printf("\n%d\n",b);
+	}
+	
+	return 0;
+}
